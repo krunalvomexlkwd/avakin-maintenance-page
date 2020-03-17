@@ -1,0 +1,149 @@
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: rgb(35,35,52);
+    background: -moz-linear-gradient(180deg, rgba(35,35,52,1) 65%, rgba(36,36,36,1) 90%);
+    background: -webkit-linear-gradient(180deg, rgba(35,35,52,1) 65%, rgba(36,36,36,1) 90%);
+    background: linear-gradient(180deg, rgba(35,35,52,1) 65%, rgba(36,36,36,1) 90%);
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+@font-face {
+	font-family: "Avakin";
+	src: url(../fonts/AvakinBook.eot);
+	src: url(../fonts/AvakinBook.eot?#iefix) format("embedded-opentype"), url(../fonts/AvakinBook.woff2) format("woff2"), url(../fonts/AvakinBook.woff) format("woff"), url(../fonts/AvakinBook.ttf) format("truetype"), url(../fonts/AvakinBook.svg#AvakinBook) format("svg");
+	font-weight: normal;
+	font-style: normal
+}
+
+@font-face {
+	font-family: "Avakin";
+	src: url(../fonts/AvakinMedium.eot);
+	src: url(../fonts/AvakinMedium.eot?#iefix) format("embedded-opentype"), url(../fonts/AvakinMedium.woff2) format("woff2"), url(../fonts/AvakinMedium.woff) format("woff"), url(../fonts/AvakinMedium.ttf) format("truetype"), url(../fonts/AvakinMedium.svg#AvakinMedium) format("svg");
+	font-weight: 500;
+	font-style: normal
+}
+
+@font-face {
+	font-family: "Avakin";
+	src: url(../fonts/AvakinBold.eot);
+	src: url(../fonts/AvakinBold.eot?#iefix) format("embedded-opentype"), url(../fonts/AvakinBold.woff2) format("woff2"), url(../fonts/AvakinBold.woff) format("woff"), url(../fonts/AvakinBold.ttf) format("truetype"), url(../fonts/AvakinBold.svg#AvakinBold) format("svg");
+	font-weight: bold;
+	font-style: normal
+}
+
+h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    font-family: Avakin;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.text {
+    width: 100%;
+    max-width: 900px;
+}
+
+.social-header{
+    font-size: 18px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    font-family: Avakin;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 0 5%;
+}
+
+.icon {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 50px;
+}
+
+ul.social-media-list img {
+    padding: 5px;
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+}
+
+ul.social-media-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0px;
+}
+
+ul.social-media-list li {
+    display: inline-block;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.0em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+    }
+    .container{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    p {
+        font-size: 1.0em;
+    }
+    .container{
+        height: auto;
+    }
+    ul.social-media-list{
+        margin-bottom: 15px;
+    }
+}
